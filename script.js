@@ -254,5 +254,6 @@ filters.forEach(filter => {
     });
 });
 
+loadTheme();
 updateDate();
 renderTasks();
