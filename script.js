@@ -1,5 +1,35 @@
 
 const themeToggle = document.getElementById("themeToggle");
+function updateThemeButton() {
+    if (document.body.classList.contains("dark")) {
+        themeToggle.textContent = "Light Mode";
+    } else {
+        themeToggle.textContent = "Dark Mode";
+    }
+}
+
+function loadTheme() {
+    const savedTheme = localStorage.getItem("todoTheme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark");
+    }
+
+    updateThemeButton();
+}
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    const isDark = document.body.classList.contains("dark");
+
+    localStorage.setItem(
+        "todoTheme",
+        isDark ? "dark" : "light"
+    );
+
+    updateThemeButton();
+});
 const taskInput = document.getElementById("taskInput");
 const addTaskButton = document.getElementById("addTask");
 const taskList = document.getElementById("taskList");
