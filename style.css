@@ -1,3 +1,30 @@
+:root {
+    --body-bg: #f4f7f5;
+    --card-bg: #ffffff;
+    --text: #17211a;
+    --muted: #66736a;
+    --border: #e5e9e6;
+    --input-bg: #ffffff;
+    --secondary-bg: #f6f8f7;
+    --hover-bg: #f0f4f1;
+    --primary: #056c24;
+    --primary-dark: #04551c;
+    --primary-light: #eaf7ee;
+}
+
+body.dark {
+    --body-bg: #111613;
+    --card-bg: #1a201c;
+    --text: #f1f5f2;
+    --muted: #9ca8a0;
+    --border: #303932;
+    --input-bg: #151a17;
+    --secondary-bg: #202721;
+    --hover-bg: #29322b;
+    --primary: #35a85b;
+    --primary-dark: #278948;
+    --primary-light: #193d25;
+}
 * {
     margin: 0;
     padding: 0;
